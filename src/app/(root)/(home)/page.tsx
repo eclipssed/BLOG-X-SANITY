@@ -5,7 +5,7 @@ import BlogSection from "@/src/components/BlogSection";
 
 export default function Home() {
   return (
-    <main className="mt-36 prose wrapper">
+    <main className="md:mt-36 mt-20 prose wrapper">
       <HeroSection />
       <BlogSection />
     </main>

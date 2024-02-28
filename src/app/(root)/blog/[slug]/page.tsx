@@ -7,8 +7,7 @@ import { FaRegClock } from "react-icons/fa6";
 import Link from "next/link";
 import { getPost } from "@/src/lib/data";
 
-export const revalidate = 10;
-// export const revalidate = 86400;
+export const revalidate = 86400;
 
 const SlugPage = async ({ params: { slug } }: any) => {
   const post = await getPost(slug);
@@ -29,7 +28,7 @@ const SlugPage = async ({ params: { slug } }: any) => {
                 className=" w-10 h-10 rounded-full object-cover "
               />
               Written By:
-              <Link className="  capitalize" href={"/"}>
+              <Link className="  capitalize" href={"https://www.instagram.com/_eclipssed/"}>
                 {post.author.name}
               </Link>
             </p>

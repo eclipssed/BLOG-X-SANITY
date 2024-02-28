@@ -3,8 +3,7 @@ import PostCard from "@/src/components/PostCard";
 import { urlFor } from "@/src/lib/createClient";
 import { getPosts } from "../lib/data";
 
-export const revalidate = 10;
-// export const revalidate = 86400;
+export const revalidate = 86400;
 
 const BlogSection = async () => {
   const posts = await getPosts();

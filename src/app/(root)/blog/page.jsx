@@ -9,8 +9,7 @@ import { client, urlFor } from "@/src/lib/createClient";
 import { groq } from "next-sanity";
 import { getPosts } from "@/src/lib/data";
 
-export const revalidate = 10;
-// export const revalidate = 86400;
+export const revalidate = 86400;
 
 
 const BlogPage = async () => {
