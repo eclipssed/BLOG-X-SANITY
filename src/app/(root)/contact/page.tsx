@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <section className="mt-36">
       {" "}
-      <div>Working on it</div>
+      <div>Working on Contact Page</div>
     </section>
   );
 };

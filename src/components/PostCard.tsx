@@ -31,7 +31,7 @@ const ProjectCard = ({ img, title, description, slug, categories }: any) => {
         <p className="text-slate-800 text-base md:text-lg  line-clamp-3 ">
           {description}
         </p>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
           <Link
             href={`/blog/${slug}`}
             className="bg-green-500 xl:text-xl hover:bg-green-600 no-underline text-white font-semibold py-2 px-6 rounded-lg inline-block transition duration-300"

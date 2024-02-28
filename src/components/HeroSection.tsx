@@ -12,7 +12,7 @@ const HeroSection = () => {
         <p className="xl:text-xl mb-4">
           Unlock a treasure trove of expert advice, insightful tips, and a
           wealth of resources to guide and support you through every milestone
-          and challenge on your parenting journey. We're here to empower you
+          and challenge on your parenting journey. We are here to empower you
           every step of the way.
         </p>
         <Link

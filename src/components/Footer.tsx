@@ -12,7 +12,7 @@ const craftyGirls = Crafty_Girls({
 
 const Footer = () => {
   return (
-    <footer className="bg-green-400 text-white w-full  mt-20">
+    <footer className="bg-green-400 text-white w-full md:mt-36  mt-20">
       <div className="wrapper flex justify-between items-center p-4 gap-4 flex-wrap ">
         <Link className={`${craftyGirls.className} flex`} href={"/"}>
           {" "}
