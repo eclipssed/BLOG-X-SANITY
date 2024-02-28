@@ -1,10 +1,6 @@
 import React from "react";
-import heroImg1 from "@/public/assets/heroImg1.jpg";
 import PostCard from "@/src/components/PostCard";
-import Image from "next/image";
-import { Post } from "@/src/lib/types/types";
-// import { client } from "@/src/lib/createClient";
-import { client, urlFor } from "@/src/lib/createClient";
+import {  urlFor } from "@/src/lib/createClient";
 
 import { groq } from "next-sanity";
 import { getPosts } from "@/src/lib/data";

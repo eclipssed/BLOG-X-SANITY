@@ -9,13 +9,35 @@ import { getPost } from "@/src/lib/data";
 
 export const revalidate = 86400;
 
+export const generateMetadata = async ({ params: { slug } }: any) => {
+  const post = await getPost(slug);
+  // console.log(post);
+  // console.log("first");
+  return {
+    title: post.title,
+    description: post.description,
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      siteId: "1467726470533754880",
+      creator: "@nextjs",
+      creatorId: "1467726470533754880",
+      images: ["https://nextjs.org/og.png"], // Must be an absolute URL
+    },
+  };
+};
+
 const SlugPage = async ({ params: { slug } }: any) => {
   const post = await getPost(slug);
   // console.log(urlFor(post?.mainImage).url());
 
   return (
     <section className="wrapper mt-36">
-      <div className="">
+      <article>
         <div className="flex flex-col prose prose-h1:mb-0 prose-p:my-0 items-center max-w-4xl mx-auto mb-16 md:mb-32">
           <h1 className="">{post.title}</h1>
           <div className="p-0 flex flex-col md:flex-row justify-between items-center gap-4 w-full ">
@@ -28,7 +50,10 @@ const SlugPage = async ({ params: { slug } }: any) => {
                 className=" w-10 h-10 rounded-full object-cover "
               />
               Written By:
-              <Link className="  capitalize" href={"https://www.instagram.com/_eclipssed/"}>
+              <Link
+                className="  capitalize"
+                href={"https://www.instagram.com/_eclipssed/"}
+              >
                 {post.author.name}
               </Link>
             </p>
@@ -66,7 +91,7 @@ const SlugPage = async ({ params: { slug } }: any) => {
             <p className="capitalize ">{post?.author?.description}</p>
           </div>
         </div>
-      </div>
+      </article>
     </section>
   );
 };
