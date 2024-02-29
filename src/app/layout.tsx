@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     google: "google",
     yandex: "yandex",
     yahoo: "yahoo",
-    other: {
-      me: ["my-email", "my-link"],
-    },
+    // other: {
+    //   me: ["my-email", "my-link"],
+    // },
   },
   twitter: {
     card: "summary_large_image",
