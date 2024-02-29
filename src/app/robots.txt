@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 Disallow: /studio/
-Sitemap: https://mama-magic-hub.vercel.app/
+Sitemap: https://mama-magic-hub.vercel.app/sitemap.xml
