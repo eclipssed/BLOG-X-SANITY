@@ -36,6 +36,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="RAOHTmPmaPmOoZo4uQD0UEZo5YdV1v5SkXSyMQQB1p0"
+        />
+      </head>
       <body
         className={` bg-gradient-to-br from-pink-100 to-green-100  ${poppins.className}`}
       >
