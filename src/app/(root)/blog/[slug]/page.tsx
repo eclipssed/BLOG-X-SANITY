@@ -7,8 +7,6 @@ import { FaRegClock } from "react-icons/fa6";
 import Link from "next/link";
 import { getPost } from "@/src/lib/data";
 
-export const revalidate = 86400;
-
 export const generateMetadata = async ({ params: { slug } }: any) => {
   const post = await getPost(slug);
   // console.log(post);

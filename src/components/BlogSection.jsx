@@ -3,11 +3,9 @@ import PostCard from "@/src/components/PostCard";
 import { urlFor } from "@/src/lib/createClient";
 import { getPosts } from "../lib/data";
 
-export const revalidate = 30;
-
 const BlogSection = async () => {
   const posts = await getPosts();
-  // console.log(posts[0].slug);
+  // console.log(posts);
   const filteredPosts = await posts.slice(0, 6);
 
   return (

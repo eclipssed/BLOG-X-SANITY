@@ -5,8 +5,6 @@ import { urlFor } from "@/src/lib/createClient";
 import { groq } from "next-sanity";
 import { getPosts } from "@/src/lib/data";
 
-export const revalidate = 30;
-
 const BlogPage = async () => {
   const posts = await getPosts();
   // console.log(posts);
